@@ -1,0 +1,30 @@
+h1 {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 60pt;
+    float: left; 
+    background-color: black;
+}
+
+h2 {
+    float: left;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    background-color: black;
+    overflow: hidden;
+    height: fit-content;
+    font-size: 30pt;
+}
+
+.nav a {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 20px;
+}
