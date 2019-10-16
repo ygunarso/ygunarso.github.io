@@ -1,30 +1,49 @@
 h1 {
-    color: white;
-    font-weight: 800;
-    background-color: black;
+    color: #14ffec;
     font-size: 40pt;
+    font-weight: 100;
 }
 
 body {
-    background-image: url(background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: gray;
+    background-color: #191919;
+    color: #14ffec;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     font-weight: 100;
 }
 
-.nav {
-    background-color: black;
-    opacity: 0.5;
-    overflow: hidden;
-    height: 150px;
-    font-size: 30pt;
+.main {
     position: fixed;
+    background: #323232;
+    width: 100%;
+    height: 70%;
+    font-weight: 100;
 }
 
-.nav a {
+.main a {
+    color: #14ffec;
+    font-size: 20pt;
+}
+
+.main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    overflow: auto;
+    float: right;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:  #14ffec;
+    color: #191919;
+}
+
+#contact {
     color: white;
-    font-weight: 400;
-    margin: 20px;
 }
