@@ -18,7 +18,7 @@
             }
             else {
                 $password = md5($password);
-                $stmt = $this->con->prepare("INSERT INTO users (id, username, password, email) VALUES (NULL, ?, ?, ?);"); 
+                $stmt = $this->con->prepare("INSERT INTO android.users (id, username, password, email) VALUES (NULL, ?, ?, ?);");
                 $stmt->bind_param('sss', $username, $password, $email);
 
                 if($stmt->execute()) {
