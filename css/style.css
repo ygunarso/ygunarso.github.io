@@ -256,6 +256,7 @@ li {
 
 .about-details {
     flex: 1;
+    max-width: 60%;
 }
 
 /* Work */
@@ -330,7 +331,7 @@ li {
     text-transform: uppercase;
     font-weight: 300;
     margin-bottom: 1rem;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .timeline h2 {
@@ -454,7 +455,7 @@ li {
 
 @media screen and (max-width: 768px) {
     body {
-        background: url("../res/images/background.jpg") no-repeat center fixed;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../res/images/background.jpg") no-repeat center fixed;
         background-size: cover;
     }
 
@@ -502,6 +503,18 @@ li {
     .icon-container i {
         font-size: 4rem;
     }
+
+    .timeline ul {
+        margin: 0 0 0 auto;
+    }
+
+    .timeline .date::before {
+        left: -20rem;
+    }
+
+    .timeline .date::after {
+        left: -5.9rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -545,8 +558,12 @@ li {
         order: 2;
     }
 
-    form {
-        width: 100%;
+    .timeline p {
+        font-size: 1.6rem;
+    }
+
+    .timeline .date::before {
+        font-size: 1.4rem;
     }
 
     .up {
